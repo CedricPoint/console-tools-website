@@ -2,7 +2,7 @@ const output = document.getElementById("console-output");
 const input = document.getElementById("command-input");
 
 // URL du webhook Discord (à remplacer par votre propre URL)
-const discordWebhookURL = "https://discord.com/api/webhooks/1302806773090222092/ZPgK-zq1B0PDbKd0VN0p1hVeVnurqzwioCRIqwAneQaB7R_ufdSQId-SMpVzUjg1zJ18";
+const discordWebhookURL = "VOTRE WEEBHOOK";
 
 // Commandes disponibles
 const commands = {
