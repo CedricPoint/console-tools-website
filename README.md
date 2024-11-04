@@ -92,4 +92,4 @@ Développé par Cédric Frank - [Informaclique](https://informaclique.fr).
 
 ## Licence
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+Ce projet est sous licence MIT. Voir le fichier [LICENSE]([LICENSE](https://github.com/CedricPoint/console-tools-website/blob/main/LICENCE)) pour plus de détails.
