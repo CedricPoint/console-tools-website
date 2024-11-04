@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tools.informaclique.fr - Interface de Commande</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-effect"></div> <!-- Effet d'arrière-plan animé -->
+    <div id="logo-container">
+        <img src="images/logo.png" alt="Logo Informaclique" id="logo">
+    </div>
+    <div id="terminal">
+        <div id="console-output">
+            <p>Bienvenue sur tools.informaclique.fr</p>
+            <p>Tapez <strong>help</strong> pour voir les commandes disponibles.</p>
+        </div>
+        <div class="input-line">
+            <span class="prompt">guest@informaclique:~$</span>
+            <input type="text" id="command-input" autofocus autocomplete="off" />
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

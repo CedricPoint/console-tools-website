@@ -1,0 +1,101 @@
+/* Style de terminal */
+body {
+    background-color: #1b1b2f;
+    color: #1ae085;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Empêche le défilement */
+}
+
+/* Conteneur pour le logo */
+#logo-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#logo {
+    width: 100px;
+    animation: zoomPulse 1.8s ease-in-out infinite alternate;
+}
+
+/* Effet de zoom pour le logo */
+@keyframes zoomPulse {
+    0% { transform: scale(0.9); }
+    100% { transform: scale(1.1); }
+}
+
+/* Style de terminal */
+#terminal {
+    width: 80%;
+    max-width: 800px;
+    background-color: #0e0e18;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+#console-output {
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+    margin-right: 5px;
+}
+
+#command-input {
+    background: none;
+    border: none;
+    color: #1ae085;
+    font-family: monospace;
+    width: 100%;
+    outline: none;
+}
+
+/* Effet d'arrière-plan animé */
+.background-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1b1b2f, #2b2d42, #3f3e5b, #1b1b2f);
+    background-size: 400% 400%;
+    animation: backgroundShift 10s ease infinite;
+    z-index: -1; /* Derrière tous les autres éléments */
+}
+
+/* Animation de l'effet d'arrière-plan */
+@keyframes backgroundShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Styles pour les particules */
+.particle {
+    position: absolute;
+    font-size: 12px;
+    color: #1ae085; /* Vert hacking */
+    opacity: 0.8;
+    animation: float 3s ease-in-out infinite;
+    user-select: none;
+    pointer-events: none; /* Évite que les particules interfèrent avec le curseur */
+}
+
+/* Animation de flottement pour les particules */
+@keyframes float {
+    0% { transform: translateY(0) translateX(0); opacity: 0.8; }
+    50% { transform: translateY(-20px) translateX(10px); opacity: 1; }
+    100% { transform: translateY(0) translateX(0); opacity: 0.8; }
+}
